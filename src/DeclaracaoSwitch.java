@@ -24,9 +24,27 @@ public class DeclaracaoSwitch {
                 System.out.println("Falha");    
         }
 
+        // Versão simplificada do switch
 
+        switch(nota){
 
+            case "A", "B" ->{
+                System.out.println("Parabéns");
+                System.out.println("Muito bem");
+            }
+            case "C" -> System.out.println("Nota C");
+            case "D" -> System.out.println("Nota D");
+            default -> System.out.println("Erro");
+        }
 
+        // Assinalando valores usando uma expressão switch
+        int num = 5;
+        char group = switch (num){
+            case 1, 2, 3 -> 'A';
+            case 4, 5 -> 'B';
+            default -> 'C';
+
+        };
 
 
 
